@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ratting = () => {
     return (
-        <div className='flex flex-col md:flex-row items-center justify-center p-20 text-white gap-20 text-center text-2xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA] mt-15'>
+        <div className='flex flex-col md:flex-row items-center justify-center p-10 md:p-20 text-white gap-5 md:gap-20 text-center text-2xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA] mt-15'>
             <div>
                 <h1 className='text-5xl font-bold'>50K+</h1>
                 <p>Active Users</p>

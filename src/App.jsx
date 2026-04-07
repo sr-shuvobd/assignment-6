@@ -12,7 +12,7 @@ function App() {
         <Banner/>
         </div>
         <Ratting/>
-        
+
         <div>
 
         </div>

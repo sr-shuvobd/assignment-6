@@ -15,12 +15,12 @@ const Banner = () => {
         </div>
 
         <div>
-          <h1 className="text-[72px] font-extrabold">Supercharge Your <br /> Digital Workflow</h1>
+          <h1 className="md:text-[72px] font-extrabold">Supercharge Your <br /> Digital Workflow</h1>
         </div>
-        <div className="w-[640px] text-[#627382]">
+        <div className=" text-[#627382]">
           <p>
-            Access premium AI tools, design assets, templates, and productivity
-            software—all in one place. Start creating faster today. Explore
+            Access premium AI tools, design assets, templates, and productivity <br />
+            software—all in one place. Start creating faster today. <br /> Explore
             Products
           </p>
         </div>
