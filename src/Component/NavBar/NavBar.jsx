@@ -1,7 +1,7 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const NavBar = () => {
+const NavBar = ({cartData}) => {
   return (
     <div className="navbar bg-base-100 shadow-sm container mx-auto">
       <div className="navbar-start">
@@ -76,7 +76,7 @@ const NavBar = () => {
           </button>
 
           <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
-            3
+            {cartData.length}
           </span>
         </div>
         {/* login */}
