@@ -1,5 +1,6 @@
 import { FaCartPlus } from "react-icons/fa";
 import CartComponent from "./CartComponent";
+import { toast } from "react-toastify";
 
 const CartCard = ({ cartData, setCartData }) => {
   const total = cartData.reduce((sum, item) => sum + item.price, 0);
@@ -34,7 +35,7 @@ const CartCard = ({ cartData, setCartData }) => {
               <p className="font-bold text-2xl">${total}</p>
             </div>
             <button
-              onClick={() => setCartData([])}
+          onClick={() =>{ setCartData([]); toast.success("Proceed to Checkout Success")}}
               className="btn w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white px-4 py-2 rounded-3xl"
             >
               Proceed to Checkout
