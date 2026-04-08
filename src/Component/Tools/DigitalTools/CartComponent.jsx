@@ -8,7 +8,7 @@ const CartComponent = ({ data, cartData, setCartData }) => {
         toast.success("Product removed successfully")
     }
   return (
-    <div className="flex shadow justify-between p-6 rounded-2xl">
+    <div className="flex flex-col md:flex-row shadow justify-between p-6 rounded-2xl">
       <div className="flex gap-6">
         <img className="shadow p-3 rounded-4xl" src={data.icon} alt="" />
         <div>

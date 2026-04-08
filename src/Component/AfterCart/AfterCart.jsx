@@ -176,7 +176,7 @@ const AfterCart = () => {
       </div>
 
       {/* footer */}
-      <div className="mt-20 bg-[#101727] flex flex-col justify-center items-center">
+      <div className="mt-20 bg-[#101727] flex flex-col justify-center items-center container())">
         <footer className="footer sm:footer-horizontal text-white text-base-content p-10">
             <div>
                 <h1 className="text-3xl">DigiTool</h1>
@@ -215,7 +215,7 @@ const AfterCart = () => {
          </div>
         </footer>
          
-        <div className="text-gray-500 gap-56 flex justify-around border-t-1 p-10 border-gray-500">
+        <div className="text-gray-500 md:gap-56 flex flex-col md:flex-row justify-around border-t-1 p-10 border-gray-500">
             <h1>© 2026 Digitools. All rights reserved.</h1>
             <ul className="flex gap-5">
                 <li>Privacy Policy</li>
