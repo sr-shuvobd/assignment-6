@@ -2,6 +2,8 @@ import React from "react";
 import user from "../../assets/user.png";
 import packag from "../../assets/package.png";
 import rocket from "../../assets/rocket.png";
+import { FaFacebookSquare, FaInstagram, FaInstagramSquare } from "react-icons/fa";
+import { FaSquareYoutube } from "react-icons/fa6";
 const AfterCart = () => {
   return (
     <div>
@@ -170,6 +172,56 @@ const AfterCart = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* footer */}
+      <div className="mt-20 bg-[#101727] flex flex-col justify-center items-center">
+        <footer className="footer sm:footer-horizontal text-white text-base-content p-10">
+            <div>
+                <h1 className="text-3xl">DigiTool</h1>
+                <p>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
+            </div>
+          <nav>
+            <h6 className="footer-title">Product</h6>
+            <a className="link link-hover">Features</a>
+            <a className="link link-hover">Pricing</a>
+            <a className="link link-hover">Templates</a>
+            <a className="link link-hover">Integrations</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Company</h6>
+            <a className="link link-hover">About us</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Jobs</a>
+            <a className="link link-hover">Press</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Resources</h6>
+            <a className="link link-hover">Documentation</a>
+            <a className="link link-hover">Help Center</a>
+            <a className="link link-hover">Community</a>
+            <a className="link link-hover">Contact</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Social Links</h6>
+            <div className="flex">
+                <FaInstagramSquare className="text-5xl" />
+                <FaFacebookSquare className="text-5xl"/>
+                <FaSquareYoutube className="text-5xl" />
+            </div>
+          </nav>
+         <div>
+         </div>
+        </footer>
+         
+        <div className="text-gray-500 gap-56 flex justify-around border-t-1 p-10 border-gray-500">
+            <h1>© 2026 Digitools. All rights reserved.</h1>
+            <ul className="flex gap-5">
+                <li>Privacy Policy</li>
+                <li>Terms of Service </li>
+                <li>Cookies</li>
+            </ul>
         </div>
       </div>
     </div>
