@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { FaCheck } from "react-icons/fa";
 import { FcCheckmark } from "react-icons/fc";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,7 +9,11 @@ const Card = ({ plane, cartData, setCartData }) => {
 const [isSelected, setIsSelected] = useState(true);
 
 const clickhendelal = (plane) => {
-
+    const filterData = cartData.filter(findId => findId.id===plane.id);
+    if(filterData.length > 0){
+      toast.error("You have allrady add this");
+      return;
+    }
     setCartData([...cartData,plane]);
     setIsSelected(false);
     toast.success("Added susces fuley")
@@ -43,8 +48,8 @@ const clickhendelal = (plane) => {
           );
         })}
       </div>
-      <button onClick={() => clickhendelal(plane)} className="inline-full btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-4xl">
-        {isSelected? "Bye Now" : "Add Suces"}
+      <button onClick={() => clickhendelal(plane)} className={`inline-full btn ${isSelected? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-green-500 text-white" }  rounded-4xl`}>
+        {isSelected? "Bye Now" : "Added to Cart"}
       </button>
       
     </div>

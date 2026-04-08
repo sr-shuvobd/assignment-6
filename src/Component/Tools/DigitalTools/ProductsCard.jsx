@@ -1,5 +1,4 @@
 
-import { FcCheckmark } from "react-icons/fc";
 import Card from "./Card";
 
 const ProductsCard = ({ data, cartData, setCartData }) => {
